@@ -14,5 +14,5 @@ COPY info.php /usr/share/nginx/html/
 RUN rm -rf /tmp/*
 ADD https://getcomposer.org/composer.phar /usr/bin/composer
 RUN chmod +x /usr/bin/composer
-
+WORKDIR /usr/share/nginx/html/
 CMD /bin/bash -c "service php7.0-fpm start; nginx -g 'daemon off;'"
