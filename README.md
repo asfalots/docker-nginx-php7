@@ -12,5 +12,8 @@ Basic installation with following php7 modules:
 - pgsql
 - phpdbg
 - mysql
+- cli
 
 A file "info.php" is available on webroot to check php availability.
+
+composer is available in $PATH
